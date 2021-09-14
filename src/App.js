@@ -8,8 +8,11 @@ export default function App() {
       <Search />
       <p>
         This application is{" "}
-        <a href="http://github.com/ravenkmusic">open sourced</a> by Raven
-        Hendricks and hosted through <a href="https://netlify.com">Netlify</a>
+        <a href="https://github.com/ravenkmusic/shecodes-weather-react">
+          open sourced
+        </a>{" "}
+        by <a href="https://ravenkmusic.com">Raven Hendricks</a> and hosted through{" "}
+        <a href="https://netlify.com">Netlify</a>.
       </p>
     </div>
   );
