@@ -1,4 +1,5 @@
 import React from "react";
+import './search.css';
 
 export default function Search() {
   let form = (
@@ -12,12 +13,22 @@ export default function Search() {
     <div>
       <h2>Baltimore</h2>
       {form}
-      <ul>
-        <li>Temperature: 20°C</li>
-        <li className="description">Description:Cloudy</li>
-        <li>Humidity: 50%</li>
-        <li>Wind: 1 KM/hour</li>
-      </ul>
+        Temperature: 20°C
+        <br className="description"/>Description:Cloudy
+        <br />Humidity: 50%
+        <br />Wind: 1 KM/hour
+        <p />
+        <div className="forecast">
+          <div className="row">
+          <div className="col-3">Sunday</div>
+          <div className="col-3">Monday</div>
+          <div className="col-3">Tuesday</div>
+          <div className="col-3">Wednesday</div>
+          <div className="col-3">Thursday</div>
+          <div className="col-3">Friday</div>
+          <div className="col-3">Saturday</div>          
+          </div>
+        </div>
     </div>
   );
 }

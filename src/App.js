@@ -7,6 +7,7 @@ export default function App() {
       <div className="container">
         <h1>Weather Application</h1>
       <Search />
+      <p />
       <footer>
         This application is{" "}
         <a
