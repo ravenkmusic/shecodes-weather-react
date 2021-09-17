@@ -1,5 +1,5 @@
 import React from "react";
-import './search.css';
+import "./search.css";
 
 export default function Search() {
   let form = (
@@ -21,18 +21,26 @@ export default function Search() {
       5:00 PM
       <p />
       {form}
-        Temperature: 20°C
-        <br className="description"/>Description:Cloudy
-        <br />Humidity: 50%
-        <br />Wind: 1 KM/hour
-        <p />
-          <div className="row">
-          <div className="col-2">Monday</div>
-          <div className="col-2">Tuesday</div>
-          <div className="col-2">Wednesday</div>
-          <div className="col-2">Thursday</div>
-          <div className="col-2">Friday</div>
+      <p />
+      <div className="container">
+        <div className="row">
+          <div className="col-6">
+            <img
+              src="https://icons-for-free.com/iconfiles/png/512/cloudy+rain+sunny+weather+icon-1320196634753156841.png"
+              alt="Sunny"
+            />
+            20°C
+          </div>
+          <div className="col-6">
+            <ul>
+              <li>Description: Cloudy</li>
+              <li>Humidity: 50% </li>
+              <li>Wind: 1 KM/hour </li>
+            </ul>
+          </div>
         </div>
+        <p />
+      </div>
     </div>
   );
 }

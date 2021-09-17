@@ -1,3 +1,29 @@
-.col-2 {
-  text-align: center;
+body {
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.row {
+  padding: 10px;
+}
+
+.container {
+  border: 1px outset;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  border-radius: 10px;
+  background: linear-gradient(
+    62deg,
+    rgb(238, 245, 246) 0%,
+    rgb(197, 241, 254) 100%
+  );
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 20%;
 }
