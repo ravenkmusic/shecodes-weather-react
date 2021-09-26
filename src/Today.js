@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function todaysDate(props) {
+export default function Today(props) {
   let days = [
     "Sunday",
     "Monday",
@@ -19,8 +19,8 @@ export default function todaysDate(props) {
   let minutes = props.date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
-    }
-    
+  }
+
   return (
     <div>
       {day} {hour}:{minutes}

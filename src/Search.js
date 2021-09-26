@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import todaysDate from "./todaysDate";
+import Today from "./Today";
 import axios from "axios";
 import "./search.css";
 
@@ -19,12 +19,12 @@ export default function Search(props) {
     });
   }
 
-  if (weatherInfo.loaded) {
+  if (weatherInfo.ready) {
     return (
       <div className="complete">
         <h3>{props.city}</h3>
         <p />
-        <todaysDate date={weatherInfo.date} />
+        <Today date={weatherInfo.date} />
         <p />
         <form>
           <input type="search" placeholder="Find your city..." />
