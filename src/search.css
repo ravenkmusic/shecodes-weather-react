@@ -1,23 +1,19 @@
-body {
-  padding: 15px;
-}
-
 ul {
   list-style-type: none;
+}
+
+.row {
+  padding: 20px;
 }
 
 .description {
   text-transform: capitalize;
 }
 
-.row {
-  padding: 10px;
-}
-
 .container {
   border: 1px outset;
   box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
-  max-width: 700px;
+  max-width: 600px;
   border-radius: 10px;
   background: linear-gradient(
     62deg,
