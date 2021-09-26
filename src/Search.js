@@ -1,44 +1,40 @@
 import React, { useState } from "react";
+import todaysDate from "./todaysDate";
 import axios from "axios";
 import "./search.css";
 
 export default function Search(props) {
-  const [loaded, setLoaded] = useState(null);
-  const [weatherInfo, setweatherInfo] = useState({});
+  let [weatherInfo, setweatherInfo] = useState({ ready: false });
 
   function handleResponse(response) {
     console.log(response.data);
     setweatherInfo({
+      ready: true,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
-      iconURL: `https://icons-for-free.com/iconfiles/png/512/cloudy+rain+sunny+weather+icon-1320196634753156841.png`,
     });
-    setLoaded(true);
   }
 
-  let form = (
-    <form>
-      <input type="search" placeholder="Find your city..." />
-      <input
-        type="Submit"
-        input
-        value="Search"
-        className="btn btn-info btn-sm"
-      />
-    </form>
-  );
-
-  if (loaded) {
+  if (weatherInfo.loaded) {
     return (
-      <div>
+      <div className="complete">
         <h3>{props.city}</h3>
         <p />
-        5:00 PM
+        <todaysDate date={weatherInfo.date} />
         <p />
-        {form}
+        <form>
+          <input type="search" placeholder="Find your city..." />
+          <input
+            type="Submit"
+            input
+            value="Search"
+            className="btn btn-info btn-sm"
+          />
+        </form>
         <p />
         <div className="container">
           <div className="row">
