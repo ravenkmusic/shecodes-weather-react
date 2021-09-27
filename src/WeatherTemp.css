@@ -1,0 +1,9 @@
+.temperature {
+  font-size: 35px;
+  color: #008eba;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.unit {
+   font-size: 15px;
+}

@@ -6,7 +6,8 @@ ul {
   padding: 20px;
 }
 
-.description {
+.description,
+.overall {
   text-transform: capitalize;
 }
 
