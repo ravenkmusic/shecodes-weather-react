@@ -39,13 +39,16 @@ export default function Search(props) {
     return (
       <div>
         <form onSubmit={handleSubmit}>
-          <input type="search" placeholder="Find your city..." />
+          <input
+            type="search"
+            placeholder="Find your city..."
+            onChange={handleInput}
+          />
           <input
             type="Submit"
             input
             value="Search"
             className="btn btn-info btn-sm"
-            onChange={handleInput}
           />
         </form>
         <p />
