@@ -1,7 +1,9 @@
 import React from "react";
 import Today from "./Today";
+import Forecast from "./Forecast";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
+import "./WeatherInfo.css";
 
 export default function WeatherInfo(props) {
   return (
@@ -30,6 +32,8 @@ export default function WeatherInfo(props) {
               <li>Wind: {Math.round(props.data.wind)} KM/hour </li>
             </ul>
           </div>
+          <hr />
+          <Forecast />
         </div>
       </div>
     </div>
