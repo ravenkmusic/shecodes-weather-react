@@ -11,6 +11,7 @@ export default function Search(props) {
     console.log(response.data);
     setweatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       city: response.data.name,
