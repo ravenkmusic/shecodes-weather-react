@@ -47,6 +47,7 @@ export default function WeatherTemp(props) {
             </span>
           </sup>
         </div>
+        <div className="description">{props.description}</div>
         <div className="overall">{props.overall}</div>
       </div>
     );
