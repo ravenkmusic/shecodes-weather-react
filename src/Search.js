@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Footer from "./Footer";
+import LoadingIcon from "./LoadingIcon";
 import axios from "axios";
 import "./search.css";
 
@@ -56,10 +58,13 @@ export default function Search(props) {
         </form>
         <p />
         <WeatherInfo data={weatherData} />
+        <p />
+        <Footer />
+        <p />
       </div>
     );
   } else {
     locate();
-    return "Loading...";
+    return <LoadingIcon color="#008EBA" />;
   }
 }
